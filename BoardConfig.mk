@@ -89,7 +89,7 @@ BOARD_MAIN_PARTITION_LIST := system system_ext vendor product
 
 # Partitions size
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
-BOARD_BOOTIMAGE_PARTITION_SIZE := 67058688
+BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 TARGET_USERIMAGES_USE_F2FS := true
 
 
@@ -150,7 +150,7 @@ BOARD_USES_MTK_HARDWARE := true
 
 ## TWRP-Specific configuration
 TW_THEME := portrait_hdpi
-TW_DEVICE_VERSION := kelexine-unofficial
+TW_DEVICE_VERSION := kelexine
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_USES_MKE2FS := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
@@ -163,6 +163,7 @@ TW_INCLUDE_NANO := true
 TW_EXCLUDE_APEX := true
 TW_INCLUDE_LPDUMP := true
 TW_INCLUDE_LPTOOLS := true
+TW_INCLUDE_PYTHON := true
 TW_INCLUDE_TWRPAPP := false
 TW_EXTRA_LANGUAGES := false
 TW_INCLUDE_NTFS_3G := true
